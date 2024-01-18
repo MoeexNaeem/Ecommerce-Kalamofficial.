@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+
+.left-column,
+.right-column {
+  width: 50%;
+  padding: 20px;
+}
+
+.left-column {
+  float: left;
+  margin-top: 10rem;
+  padding-left: 15rem;
+}
+
+.right-column {
+  float: right;
+  background-color: #fff; /* Adjust the background color as needed */
+  padding-left: 5rem;
+}
+
+/* Media query for tablets and smaller screens */
+@media only screen and (max-width: 768px) {
+  .left-column,
+  .right-column {
+    width: 100%;
+    float: none;
+    padding: 10px; /* Adjust padding for smaller screens */
+    margin-top: 2rem; /* Adjust margin-top for smaller screens */
+    padding-left: 5rem; /* Remove left padding on smaller screens */
+  }
+}
+
+/* Clear the float to prevent overlapping */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.Image_setting {
+  width: 30rem;
+}
+.Heading_color {
+  color: #004171;
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+.Head_color {
+  font-family: "Poppins", sans-serif;
+}
+.the_name {
+  color: rgb(98, 94, 94);
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 15px;
+  font-family: "Poppins", sans-serif;
+}
+.hr_lines {
+  align-items: center;
+  align-content: center;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  color: #004171;
+  border: 0.3px solid;
+  
+}
+/* ---------------------Button---------------------------------- */
+
+.cta {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+@media (max-width: 768px) {
+  .right-column {
+   
+    display: none;
+  }
+  .left-column {
+    
+    margin-top: 10rem;
+    margin-right: 20px;
+  }
+}
+.pattern-background {
+  background: url('../Images/patterns.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+

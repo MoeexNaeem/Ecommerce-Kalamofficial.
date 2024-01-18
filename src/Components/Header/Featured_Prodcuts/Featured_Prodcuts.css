@@ -1,0 +1,37 @@
+.featured_product_Heading{
+    font-family: "poppins";
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #004171;
+    margin-top: 1rem;
+}
+.featured_product_Top{
+    font-family: "poppins";
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+#bottone1 {
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    background-color: #0560a0;
+    border: none;
+    font-family: inherit;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+    color: #fff;
+    width: 12rem;
+
+   }
+   
+   #bottone1:hover {
+    box-shadow: 7px 5px 56px -14px #004171;
+   }
+   
+   #bottone1:active {
+    transform: scale(0.97);
+    box-shadow: 7px 5px 56px -10px #004171;
+   }

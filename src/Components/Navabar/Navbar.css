@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+.navbar {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  box-shadow: none !important;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: small;
+  font-weight: 600;
+}
+.dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.dropdown-menu .dropdown-item {
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  font-size: small;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link,
+.navbar-nav .nav-item {
+  color: black !important;
+  font-family: "Poppins", sans-serif;
+  font-size: small;
+  font-weight: 600;
+}
+.form-control,
+.btn-outline-success {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Set a semi-transparent background color for input and button */
+  color: #333; /* Set the text color for input and button */
+  font-family: "Poppins", sans-serif;
+  font-size: small;
+}
+.Button_success {
+  background: none;
+  border-radius: 5px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: small;
+  font-weight: 600;
+  transition: 0.4s;
+  width: 8rem;
+}
+.Button_success:hover {
+  background-color: aliceblue;
+  border-radius: 5px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: small;
+  font-weight: 600;
+  transition: 0.4s;
+  width: 8rem;
+}
+/* --------------------Icon Style-------------------- */
+
+@media (max-width: 768px) {
+  .Icon_style {
+    margin-left: 25rem;
+    margin-top: 1rem;
+  }
+}
+/* --------------------Icon Style-------------------- */
+
+/* --------------------Auth Button Style-------------------- */
+
+.Auth_button{
+  width: 7rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+  background-color: transparent;
+  border: 1px solid #004171;
+  font-family: "poppins";
+  font-size: small;
+  transition: 0.2s;
+}
+.Auth_button:hover{
+  width: 7rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+  background-color: #004171;
+  border: 1px solid #004171;
+  font-family: "poppins";
+  font-size: small;
+  color: #fff;
+  transition: 0.2s;
+}
+
+/* --------------------Auth Button Style-------------------- */
+
+/* --------------------Auth User Name-------------------- */
+
+.auth_user_name{
+  
+  font-family: "poppins";
+  font-size: small;
+  color: #004171;
+  margin-left: 87.55rem;
+  margin-top: 0.5rem;
+}
+
+
+
