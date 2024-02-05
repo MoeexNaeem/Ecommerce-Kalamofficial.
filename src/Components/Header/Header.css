@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
 .left-column,
 .right-column {
@@ -134,5 +135,68 @@
   background: url('../Images/patterns.jpg') no-repeat center center fixed;
   background-size: cover;
 }
+.custom-banner {
+  width: 100vw; /* 100% of the viewport width */
+  overflow: hidden; /* Hide any overflow beyond 100% width */
+  position: relative; /* Added to align child elements properly */
+  height: 90vh;
+}
 
+/* Custom style for text and button */
+.banner-text {
+  position: absolute;
+  top: 40%;
+  left: 20%; /* Center text horizontally */
+  transform: translateX(-50%) translateY(-50%); /* Center text vertically and horizontally */
+  text-align: left;
+  color: #fff; /* Adjust text color */
+}
 
+.btn-custom {
+  margin-top: 15px; /* Adjust as needed */
+}
+
+.header_heading{
+  font-family: 'Merriweather', serif;
+  line-height: 4.5rem;
+  }
+
+  .btn_header {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #8A53CD;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 16px;
+    width: 160px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+   }
+   
+   .btn_header span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+   }
+   
+   .btn_header span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+   }
+   
+   .btn_header:hover span {
+    padding-right: 15px;
+   }
+   
+   .btn_header:hover span:after {
+    opacity: 1;
+    right: 0;
+   }

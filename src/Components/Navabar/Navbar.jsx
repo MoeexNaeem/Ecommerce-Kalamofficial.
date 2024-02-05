@@ -52,40 +52,14 @@ const Navbar = () => {
                   </NavLink>
                 </li>
                 <div>
-                <li className="nav-item dropdown">
-                  <NavLink
-                    className="nav-link dropdown-toggle"
-                    to=""
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/men">
                     Shop
                   </NavLink>
-                  <ul className="dropdown-menu">
-                    <li>
-                      <NavLink
-                        style={{ background: "none" }}
-                        className=" dropdown-item"
-                        to="/men"
-                      >
-                        <span style={{ color: "black" }}>Men</span>
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        style={{ background: "none" }}
-                        className=" dropdown-item"
-                        to=""
-                      >
-                        <span style={{ color: "black" }}>Women</span>
-                      </NavLink>
-                    </li>
-                  </ul>
                 </li>
                 </div>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/">
+                  <NavLink className="nav-link" to="/track">
                     Track
                   </NavLink>
                 </li>

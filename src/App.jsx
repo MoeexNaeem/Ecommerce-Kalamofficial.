@@ -11,6 +11,7 @@ import Display from "./Components/Display";
 import Address from "./Components/Checkout/Address";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
+import Track from "./Components/Track/Track";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/address" element={<Address />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/display" element={<Display />} />
+          <Route path="/track" element={<Track />} />
         </Routes>
       </CartProvider>
       <Footer/>

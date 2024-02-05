@@ -50,9 +50,11 @@ const Order = () => {
                 Go Back
               </button>
             </NavLink>
+            <NavLink to="/track">
             <button type="button" className="track">
               Track my package
             </button>
+            </NavLink>
           </div>
         </div>
       </div>

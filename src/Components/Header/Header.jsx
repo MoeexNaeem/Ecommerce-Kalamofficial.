@@ -7,15 +7,67 @@ import { NavLink } from "react-router-dom";
 import Featured_Prodcuts from "./Featured_Prodcuts/Featured_Prodcuts";
 import About_page from "../About/About_page";
 import Contact_Form from "../Contact/Contact_Form";
-import Patterns from "../Images/patterns.jpg"
-import 'animate.css';
+import banner from "../Images/banner.png";
+import "animate.css";
 
 const Header = () => {
   return (
     <>
       <Navbar />
-      
-      <div className="left-column">
+
+      <div className="custom-banner">
+        <div className="row">
+          <div className="col-12">
+            <img
+              src={banner}
+              className="img-fluid"
+              alt="Responsive Banner Image"
+            />
+            <div className="banner-text">
+              <div style={{ marginLeft: "20rem", marginTop: "2.5rem" }}>
+                <h2
+                  style={{
+                    color: "white",
+                    fontFamily: "poppins",
+                    letterSpacing: "1.3px",
+                    lineHeight: "55px",
+                  }}
+                >
+                  <span style={{ fontSize: "15px", color: "#d1d3d4" }}>
+                    Make it Simple but Significant
+                  </span>{" "}
+                  <br />
+                  <span
+                    style={{
+                      fontSize: "50px",
+                      fontWeight: "bold",
+                      letterSpacing: "2px",
+                    }}
+                  >
+                    <span className="header_heading">
+                      Explore Amazing <br />
+                      Fashionable Wearables <br />
+                      this Season
+                    </span>
+                  </span>
+                </h2>
+                <NavLink to="/men">
+                <button className="btn_header">
+                  <span >Shop Now</span>
+                </button>
+                </NavLink>
+                <NavLink to="/contact">
+                <button style={{backgroundColor:"#FD346A"}} className="btn_header">
+                  <span>Contact Us</span>
+                </button>
+                </NavLink>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="left-column">
         <div className="animate__animated animate__fadeInLeft">
         <h2 className="Head_color">Make it Simple but</h2>
         <span className="Heading_color">significant</span>
@@ -44,7 +96,7 @@ const Header = () => {
       </div>
       <div className="right-column">
         <img src={HeaderImage} alt="Independent Image" />
-      </div>
+      </div> */}
 
       <div className="clearfix"></div>
       <hr className="hr_lines" />
@@ -57,11 +109,11 @@ const Header = () => {
       </div>
       <hr className="hr_lines" />
       <div>
-      <div style={{ textAlign: "center" }}>
+        <div style={{ textAlign: "center" }}>
           <h6 className="featured_product_Top">Ask about our Product</h6>
           <span className="featured_product_Heading">Contact Us</span>
         </div>
-        <Contact_Form/>
+        <Contact_Form />
       </div>
     </>
   );
